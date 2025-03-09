@@ -5,7 +5,7 @@
 **Lyric-Match** is a web application that tests your knowledge of song lyrics. Users can generate random lyrics, verify their answers, and explore a vast song library. Whether you're a music lover or just up for a fun challenge, Lyric-Match is the perfect way to engage with your favorite tunes! 🎤🎶
 
 ## 🚀 Live Demo
-[**Try Lyric-Match Now!**]([https://lyric-match-8765.onrender.com](https://lyric-match-8765.onrender.com))
+[**Try Lyric-Match Now!**](https://lyric-match-8765.onrender.com)
 
 ## ✨ Features
 ✅ **Generate Lyrics:** Get random lyrics from our database.  
@@ -20,7 +20,7 @@
 ### 🎨 **Frontend:**
 - React.js
 - Axios for API requests
-- Tailwind CSS (for styling)
+- CSS (for styling)
 
 ### 🖥 **Backend:**
 - Node.js & Express.js
