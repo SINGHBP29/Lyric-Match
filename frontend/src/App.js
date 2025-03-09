@@ -17,7 +17,7 @@ const LyricGuessingGame = () => {
   const [gameStarted, setGameStarted] = useState(false);
   const [songList, setSongList] = useState([]);
 
-  const API_BASE_URL = 'https://lyric-match-vhou.onrender.com';
+  const API_BASE_URL = 'https://lyric-match-vhou.onrender.com/api';
 
   useEffect(() => {
     fetchSongList();
