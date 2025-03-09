@@ -6,7 +6,7 @@ const app = require('./app'); // ✅ Import the app from your src directory
 const port = process.env.PORT || 5000;
 
 // ✅ Allow requests from frontend (React app)
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'https://lyric-match-8765.onrender.com' }));
 app.use(express.json()); // Ensure JSON parsing is enabled
 
 // ✅ Start server
