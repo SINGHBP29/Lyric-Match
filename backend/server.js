@@ -1,16 +1,3 @@
-// // // Import the app from your src directory
-// // const app = require('./src/app');
-
-// // // Import your config
-// // const dotenvConfig = require('./src/config/dotenvConfig');
-// // const PORT = dotenvConfig.PORT || 3000;
-
-// // // Listen on the port
-// // app.listen(PORT, () => {
-// //     console.log(`Server running at http://localhost:${PORT}`);
-// // });
-
-// server.js - Main entry point
 require('dotenv').config(); // ✅ Load environment variables first
 const express = require('express');
 const cors = require('cors');
