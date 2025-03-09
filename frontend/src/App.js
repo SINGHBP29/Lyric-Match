@@ -17,7 +17,7 @@ const LyricGuessingGame = () => {
   const [gameStarted, setGameStarted] = useState(false);
   const [songList, setSongList] = useState([]);
 
-  const API_BASE_URL = 'https://lyric-match-vhou.onrender.com/api';
+  const API_BASE_URL = 'https://lyric-match-vhou.onrender.com';
 
   useEffect(() => {
     fetchSongList();
@@ -25,7 +25,7 @@ const LyricGuessingGame = () => {
 
   const fetchSongList = async () => {
     try {
-      const response = await axios.get(`${API_BASE_URL}/songs`);
+      const response = await axios.get(`${API_BASE_URL}/api/songs`);
       setSongList(response.data);
     } catch (error) {
       console.error('Error fetching song list:', error);
@@ -38,7 +38,7 @@ const LyricGuessingGame = () => {
     setUserGuess('');
     setGameStarted(true);
     try {
-      const response = await axios.get(`${API_BASE_URL}/generate-lyrics`);
+      const response = await axios.get(`${API_BASE_URL}/api/generate-lyrics`);
       const data = response.data;
       setLyricSnippet(data.lyricSnippet);
       setActualSong(data.correctTitle);
@@ -54,7 +54,7 @@ const LyricGuessingGame = () => {
   const checkAnswer = async () => {
     if (!userGuess.trim()) return;
     try {
-      const response = await axios.post(`${API_BASE_URL}/check-answer`, { guess: userGuess });
+      const response = await axios.post(`${API_BASE_URL}/api/check-answer`, { guess: userGuess });
       const data = response.data;
       setResult(data.isCorrect);
       setActualSong(data.correctTitle);
