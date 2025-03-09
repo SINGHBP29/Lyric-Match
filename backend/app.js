@@ -1,18 +1,4 @@
-// const express = require('express');
-// const cors = require('cors');
-// const bodyParser = require('body-parser');
-// const lyricsRoutes = require('./src/routes/lyricsRoutes');
-// const songRoutes = require('./src/routes/songsRoutes');
 
-// const app = express();
-
-// app.use(cors());
-// app.use(bodyParser.json());
-
-// app.use('/api/lyrics', lyricsRoutes);
-// app.use('/api/songs', songRoutes);
-
-// module.exports = app;
 
 const express = require('express');
 const cors = require('cors');
